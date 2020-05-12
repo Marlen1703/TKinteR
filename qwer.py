@@ -4,12 +4,18 @@ from PIL import ImageTk,Image,ImageOps
 from tkinter.font import Font
 import random
 from pygame import mixer
+
 tries=0
 tryr=0
 class Menu(Tk):
      def __init__(self):
           Tk.__init__(self)
           self.frame=Frame(self,width="1020",height="720")
+
+
+
+
+
           self.open_image=Image.open("image_E.jpg")
           self.open_image=self.open_image.resize((1020,720),Image.ANTIALIAS)
           self.open_image2=Image.open("bender.jpg")
